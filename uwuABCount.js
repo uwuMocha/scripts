@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        uwuAB Count
-// @version     0.2
+// @version     0.3
 // @updateURL   https://raw.githubusercontent.com/uwuMocha/scripts/main/uwuABCount.js
 // @match       https://animebytes.tv/forums.php?*action=viewthread&threadid=556*
 // ==/UserScript==
@@ -10,7 +10,7 @@
 //detect if I may have submitted a number at the same time as someone else and need to edit
 function main() {
 //GOTO LAST PAGE
-  var element = document.querySelector("#forum_70 > div.pages > div.pagenums > a.next-prev.last:last-child")
+  var element = document.querySelector("#forum_70 > div.pages > div.pagenums > a.next-prev.last:last-child");
   if (element) {
     element.click();
     return;
