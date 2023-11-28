@@ -6,6 +6,7 @@
 // ==/UserScript==
 //TODO:
 //force scroll to bottom after image load
+//maybe change so it scrolls to last post on page instead of the bottom of the page
 //detect if I was prev post and disable submitting reply if so
 //detect if I may have submitted a number at the same time as someone else and need to edit
 function main() {
@@ -23,7 +24,7 @@ function main() {
   var postCount = 25 * (parseInt(pageNum) - 1) + posts.length + 1;
 // Make CMD + ENTER listener
   document.body.addEventListener('keydown', (event) => {
-    if(event.key === "Enter" && (event.metaKey || event.ctrlKey)) {
+    if(event.key === "Enter" && (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)) {
         document.getElementById("quickpostform").submit();
     }
 });
