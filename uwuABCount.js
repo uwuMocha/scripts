@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        uwuAB Count
-// @version     0.3
+// @version     0.3.1
 // @updateURL   https://raw.githubusercontent.com/uwuMocha/scripts/main/uwuABCount.js
 // @match       https://animebytes.tv/forums.php?*action=viewthread&threadid=556*
 // ==/UserScript==
