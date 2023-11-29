@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        uwuAB Count
-// @version     0.5
+// @version     0.6
 // @updateURL   https://raw.githubusercontent.com/uwuMocha/scripts/main/uwuABCount.js
 // @match       https://animebytes.tv/forums.php?*action=viewthread&threadid=556*
 // ==/UserScript==
@@ -42,7 +42,7 @@ function main() {
     }
     if(nextPostCount - lastPostNumber != 1){
       document.getElementById("quickpost").style.border="3px solid red";
-      document.getElementById("quickpost").value = "Edit your post...";
+      document.getElementById("quickpost").value = "Edit your post... It should be: " + (nextPostCount - 1);
     } else {
       document.getElementById("quickpost").value = "Please wait to post again...";
     }
