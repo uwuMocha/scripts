@@ -11,7 +11,7 @@
 //detect if I may have submitted a number at the same time as someone else and need to edit
 function main() {
 //GOTO LAST PAGE
-  var element = document.querySelector("#forum_70 > div.pages > div.pagenums > a.next-prev.last:last-child");
+  var element = document.querySelector("a.next-prev.last");
   if (element) {
     element.click();
     return;
@@ -19,7 +19,7 @@ function main() {
 //Count posts on last page
   var posts = document.getElementsByClassName('post_block');
 //Get page number
-  var pageNum = document.querySelector("#forum_70 > div.pages > div.pagenums > span.page-link.nolink:last-child").textContent.trim();
+  var pageNum = document.querySelector("span.page-link.nolink").textContent.trim();
 //Calculate number to post
   var postCount = 25 * (parseInt(pageNum) - 1) + posts.length + 1;
 // Make CMD + ENTER listener
