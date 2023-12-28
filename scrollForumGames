@@ -23,15 +23,9 @@ function scrollFocus() {
 
 function doLastPage() {
   createLastPageToggle();
-  // 
-  //GOTO LAST PAGE
-  //
   var element = document.querySelector("div.linkbox.linkbox_bottom > a:last-child");
   var lastPageToggle = window.localStorage.getItem("lastPage");
   if (element && lastPageToggle === "true") {
-    //can't disable posting because the buttons haven't been
-    //created yet and it seems to cause an error
-    //disablePosting();
     element.click();
     return;
   }
