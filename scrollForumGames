@@ -11,11 +11,6 @@ function main() {
   scrollFocus();
 }
 
-function insertText(textValue) {
-  document.getElementById("quickpost").value = textValue;
-  scrollFocus();
-}
-
 function scrollFocus() {  
   document.getElementById("quickpost").focus();
   window.onload = window.scrollTo(0, document.body.scrollHeight);
